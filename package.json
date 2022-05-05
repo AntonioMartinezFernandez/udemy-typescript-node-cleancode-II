@@ -8,7 +8,10 @@
     "build": "tsc",
     "lint": "eslint \"{src,test}/**/*.ts\"",
     "lint:fix": "eslint \"{src,test}/**/*.ts\" --fix",
-    "test": "jest --watchAll",
+    "test": "jest --watch",
+    "test:all": "jest --watchAll",
+    "test:unit": "jest --config=jest.config.unit.ts",
+    "test:integration": "jest --config=jest.config.integration.ts",
     "test:coverage": "jest --coverage"
   },
   "repository": {

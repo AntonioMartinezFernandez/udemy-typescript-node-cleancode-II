@@ -19,4 +19,7 @@ export default {
 
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: 'v8',
+
+  // Find test files ended in spec and test with extensions .js and .ts
+  testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
 };
